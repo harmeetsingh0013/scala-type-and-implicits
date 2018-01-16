@@ -1,13 +1,21 @@
+// Upper Bound Example
 
-trait List[-ItemType] {
-  def ++[OtherItemType <: ItemType](other: List[OtherItemType]): List[OtherItemType]
+class Animal
+class Dog extends Animal
+class Puppy extends Dog
+
+class AnimalCarer{
+  def display [T <: Dog](t: T){
+    println(t)
+  }
 }
 
-class EmptyList[ItemType] extends List[ItemType] {
-  override def ++[OtherItemType <: ItemType](other: List[OtherItemType]) = other
-}
+val animal = new Animal
+val dog = new Dog
+val puppy = new Puppy
 
-val list1 = new EmptyList[String]
-val list2 = new EmptyList[Char]
+val animalCarer = new AnimalCarer
 
-val result: List[Char with String] = list1.++(list2)
+//animalCarer.display(animal)
+animalCarer.display(dog)
+animalCarer.display(puppy)
