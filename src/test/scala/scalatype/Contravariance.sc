@@ -14,4 +14,4 @@ foo(1)
 
 //bar(1)
 
-trait Function[Any, Return]
+trait Function1[Arg, Return]

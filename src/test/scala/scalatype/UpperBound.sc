@@ -16,6 +16,6 @@ val puppy = new Puppy
 
 val animalCarer = new AnimalCarer
 
-//animalCarer.display(animal)
+animalCarer.display(animal)
 animalCarer.display(dog)
 animalCarer.display(puppy)

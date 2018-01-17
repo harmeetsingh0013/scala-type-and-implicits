@@ -24,7 +24,7 @@ object WithoutType extends App {
 
   val value = list.get(0).asInstanceOf[Int]
   println(s"Value 1: $value")
-//  val value2 = list.get(1).asInstanceOf[Int]
-//  println(s"Value 2: $value2")
+  val value2 = list.get(1).asInstanceOf[Int]
+  println(s"Value 2: $value2")
 }
 
